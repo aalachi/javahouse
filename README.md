@@ -17,7 +17,7 @@ JavaHouse est un projet personnel de bout en bout, **entièrement développé en
 ## 🧱 Architecture
 
 ```
-Collecteur (Java)  →  PostgreSQL
+Collecteur (Python)  →  PostgreSQL
                           ↓
         Entraînement du modèle (Java)
                           ↓
@@ -28,7 +28,7 @@ Projet **100 % Java**, organisé en modules Maven.
 
 | Composant | Rôle | Technologies |
 |---|---|---|
-| `collector/` | Collecte des annonces et stockage | Java, Playwright for Java, Jsoup |
+| `collector/` | Collecte des annonces et stockage | Python, Selenium |
 | `ml/` | Nettoyage, features, entraînement, évaluation | Java, Tablesaw, Tribuo / Smile |
 | `api/` | API REST, charge le modèle entraîné et sert les estimations | Java, Spring Boot, Spring Data JPA |
 | `db` | Stockage des annonces | PostgreSQL |
